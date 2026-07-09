@@ -8,86 +8,160 @@
     <title>Meu Blog Tech</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f2f2f2;
+
+        * {
+            box-sizing: border-box;
         }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background: #f2f2f2;
+        }
+
 
         header {
-            background-color: #0066cc;
+            background: linear-gradient(90deg, #0066cc, #003366);
             color: white;
             text-align: center;
-            padding: 30px;
+            padding: 40px;
         }
 
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+
         main {
-            max-width: 900px;
+            width: 90%;
+            max-width: 1000px;
             margin: 30px auto;
         }
 
+
+
         article {
+
             display: flex;
-            gap: 20px;
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px #ccc;
+            gap: 25px;
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+
+            border-radius: 15px;
+
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+
+            align-items: center;
+
         }
+
+
 
         article img {
-            width: 250px;
-            height: 250px;
+
+            width: 260px;
+            height: 200px;
+
             object-fit: cover;
-            border-radius: 10px;
+
+            border-radius: 15px;
+
         }
+
+
 
         article div {
+
             flex: 1;
+
         }
+
+
 
         h2 {
-            color: #333;
+
+            color: #003366;
+
         }
+
+
 
         .artigo-autor {
-            color: gray;
+
+            color: #777;
+            font-size: 14px;
+
         }
+
+
 
         button {
+
             border: none;
-            padding: 10px 15px;
-            margin-right: 10px;
-            border-radius: 20px;
+
+            background: #eeeeee;
+
+            padding: 12px 18px;
+
+            border-radius: 30px;
+
             cursor: pointer;
-            background-color: #eeeeee;
-            font-size: 16px;
+
+            font-size: 18px;
+
+            margin-right: 10px;
+
+            transition: .3s;
+
         }
+
+
 
         button:hover {
-            background-color: #ddd;
+
+            background: #cccccc;
+
+            transform: scale(1.05);
+
         }
 
 
-        @media(max-width:700px) {
+
+
+        @media(max-width:700px){
+
 
             article {
+
                 flex-direction: column;
+
             }
 
+
             article img {
+
                 width: 100%;
+
             }
+
 
         }
 
+
+
     </style>
+
 
 </head>
 
 
+
 <body>
+
 
 
 <header>
@@ -102,42 +176,54 @@
 
 
 
+
 <main>
+
 
 
     <article>
 
-        <img src="imagem-blog.png"
-        alt="Logotipo conceitual de tecnologia e educação">
+
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+        alt="Pessoa programando em computador">
 
 
         <div>
 
-            <h2>Meu primeiro post</h2>
+
+            <h2>
+                Meu primeiro post
+            </h2>
+
 
             <p class="artigo-autor">
-                Por: Marcelo Paludetto
+                Por: Lucas
             </p>
+
 
 
             <p>
                 Boas-vindas ao meu novo blog!
-                Aqui vou compartilhar dicas de programação
-                e curiosidades da área de tecnologia.
+                Aqui vou compartilhar dicas de programação,
+                desenvolvimento web e curiosidades da tecnologia.
             </p>
 
 
-            <button>
+
+            <button class="curtir">
                 ❤️ <span>0</span>
             </button>
 
 
-            <button>
+
+            <button class="curtir">
                 👍 <span>0</span>
             </button>
 
 
+
         </div>
+
 
 
     </article>
@@ -145,39 +231,102 @@
 
 
 
+
     <article>
 
 
-        <img src="imagem-blog.png"
-        alt="Logotipo conceitual de tecnologia e educação">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600"
+        alt="Tecnologia e placas eletrônicas">
+
 
 
         <div>
 
 
-            <h2>Meu segundo post</h2>
+            <h2>
+                Meu segundo post
+            </h2>
+
 
 
             <p class="artigo-autor">
-                Por: Marcelo Paludetto
+                Por: Lucas
             </p>
 
 
 
+
             <p>
-                Neste segundo artigo vamos continuar
-                aprendendo sobre desenvolvimento web,
+                Neste segundo artigo vamos falar sobre
+                programação, inteligência artificial,
                 HTML, CSS e JavaScript.
             </p>
 
 
 
-            <button>
+
+            <button class="curtir">
                 ❤️ <span>0</span>
             </button>
 
 
-            <button>
+
+
+            <button class="curtir">
+                👍 <span>0</span>
+            </button>
+
+
+
+        </div>
+
+
+
+    </article>
+
+
+
+
+
+    <article>
+
+
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600"
+        alt="Segurança digital">
+
+
+        <div>
+
+
+            <h2>
+                Meu terceiro post
+            </h2>
+
+
+
+            <p class="artigo-autor">
+                Por: Lucas
+            </p>
+
+
+
+
+            <p>
+                Aprendendo cada vez mais sobre tecnologia,
+                segurança digital e criação de sites.
+            </p>
+
+
+
+
+            <button class="curtir">
+                ❤️ <span>0</span>
+            </button>
+
+
+
+
+            <button class="curtir">
                 👍 <span>0</span>
             </button>
 
@@ -187,6 +336,7 @@
 
 
     </article>
+
 
 
 </main>
@@ -195,10 +345,11 @@
 
 
 
+
 <script>
 
 
-let botoes = document.querySelectorAll("button");
+let botoes = document.querySelectorAll(".curtir");
 
 
 
@@ -209,11 +360,8 @@ botoes.forEach(function(botao){
 
 
 
-    botao.addEventListener("click", botaoClicado);
+    botao.addEventListener("click", function(){
 
-
-
-    function botaoClicado(){
 
 
         let texto = botao.querySelector("span");
@@ -228,7 +376,9 @@ botoes.forEach(function(botao){
             curtiu = true;
 
 
-        } else {
+        }
+
+        else {
 
 
             texto.textContent--;
@@ -239,7 +389,9 @@ botoes.forEach(function(botao){
         }
 
 
-    }
+
+    });
+
 
 
 });
@@ -247,6 +399,8 @@ botoes.forEach(function(botao){
 
 
 </script>
+
+
 
 
 </body>
