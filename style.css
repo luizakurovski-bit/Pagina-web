@@ -1,1 +1,128 @@
+* {
+    box-sizing: border-box;
+}
 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f2f2f2;
+}
+
+
+header {
+    background: linear-gradient(90deg, #0066cc, #003366);
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+article {
+
+    display: flex;
+    gap: 25px;
+    background: white;
+
+    padding: 25px;
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+
+    align-items: center;
+
+}
+
+
+article img {
+
+    width: 260px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+}
+
+
+article div {
+    flex: 1;
+}
+
+
+h2 {
+    color: #003366;
+}
+
+
+.artigo-autor {
+
+    color: #777;
+    font-size: 14px;
+
+}
+
+
+button {
+
+    border: none;
+
+    background: #eeeeee;
+
+    padding: 12px 18px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    margin-right: 10px;
+
+    transition: .3s;
+
+}
+
+
+button:hover {
+
+    background: #cccccc;
+
+    transform: scale(1.05);
+
+}
+
+
+
+@media(max-width:700px){
+
+    article {
+
+        flex-direction: column;
+
+    }
+
+
+    article img {
+
+        width: 100%;
+
+    }
+
+}
